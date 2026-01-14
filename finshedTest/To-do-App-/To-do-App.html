@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To do App</title>
+    </head>
+    <body bgcolor="pink">
+        <div class="box_list">
+            <h1>to do list</h1>
+            <input type="text" id="listinput">
+            <button onclick="add()">ADD</button>
+            <button onclick="remove()">remove</button>
+            <ul id="list">
+
+            </ul>
+        </div>
+        <script>
+            let list = document.getElementById("list")
+            function add(){
+                let input = document.getElementById("listinput");
+                let value = input.value.trim();
+
+                if (value !== "") {
+                    let li = document.createElement("li");
+                    li.textContent = value;
+                    list.appendChild(li);
+                    input.value = ""; // Clear the input field after adding
+                    
+                }
+            }
+            function remove(){
+                if (list.lastChild)
+                list.removeChild(list.lastChild);
+            }
+        </script>
+    </body>
+</html>
