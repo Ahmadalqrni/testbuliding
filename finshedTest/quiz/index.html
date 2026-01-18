@@ -60,7 +60,7 @@
             <h1>Quiz</h1>
             <div class="qeustion_box">
                 <p id="qeustion"></p>
-                <p>score point: <span id="scorenumber">0</span></p>
+                <p id="point">score point: <span id="scorenumber">0</span></p>
                 <ul>
                     <li><button id="answer1" onclick="a(this)"></button></li>
                     <li><button id="answer2" onclick="a(this)"></button></li>
@@ -86,7 +86,7 @@
             let answer4 = document.getElementById("answer4")
 
             let scorenumber = document.getElementById("scorenumber")
-            
+            let point = document.getElementById("point")
 
 
            function loadQuestion() {
@@ -155,7 +155,8 @@
                     }
                     
                     qeustion.textContent = "Quiz Finished 🎉";
-                    scorenumber.textContent = "Final Score: " + finalScore;
+                    
+                    point.textContent = "Your final score is:" + finalScore;
                     
                     // Add GIF
                     let gifElement = document.createElement("img");

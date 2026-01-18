@@ -14,7 +14,7 @@ if (random === 1) {ص
 console.log(random);
 console.log(randomlist);
 
-*/
+
 
 let number = [1, 2, 54, 23, 542, 223];
 
@@ -45,3 +45,68 @@ people.forEach((person) => {
 });
 
 console.log(adults);
+
+console.log(
+  "--------------------------------------------------------------------------",
+);
+let fruits = [
+  { name: "Apple", expirtion: "2025-12-01" },
+  { name: "Banana", expirtion: "2025-11-15" },
+  { name: "Cherry", expirtion: "2026-01-10" },
+];
+let freshFruits = [];
+
+fruits.forEach((fruit) => {
+  let expDate = new Date(fruit.expirtion);
+  let currentDate = new Date();
+  if (expDate < currentDate) {
+    freshFruits.push(fruit.name);
+  }
+});
+console.log(freshFruits);
+
+console.log(
+  "--------------------------------------------------------------------------",
+);
+
+let tasks = [
+  { title: "homerwork", deadline: "2024-07-01" },
+
+  { title: "cleaning", deadline: "2024-07-01" },
+
+  { title: "shopping", deadline: "2026-07-01" },
+];
+
+let notime = [];
+
+tasks.forEach((taskss) => {
+  let dl = new Date(taskss.deadline);
+  let today = new Date();
+  if (dl < today) {
+    notime.push(taskss.title);
+  }
+});
+
+console.log(notime);
+
+let products = [
+  { name: "Laptop", quantity: 2 },
+  { name: "Phone", quantity: 0 },
+  { name: "Tablet", quantity: 3 },
+];
+
+let outOfStock = [];
+let inOfStock = [];
+products.forEach((productstock) => {
+  let instock = productstock.quantity;
+  if (instock === 0) {
+    outOfStock.push(productstock.name);
+  } else {
+    inOfStock.push(productstock.name);
+  }
+});
+
+console.log("outofstock", outOfStock);
+console.log("inofstock", inOfStock);
+
+*/
