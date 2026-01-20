@@ -7,15 +7,19 @@
         <title>weather app</title>
     </head>
     <body>
+        <h1>weather app</h1>
         <div class="weatherCard">
             <div id="weatherResult">
                 <h2 id="temperature">--°C</h2>
                 <p id="cityName">City Name</p>
+                <img id="weatherIcon" alt="Weather Icon" class="weather-icon" style="display: none;">
+                <p id="statusMessage" class="status-message"></p>
             </div>
             <div class="inputSection">
                 <input type="text" id="cityInput" placeholder="Enter City Name">
-                <button id="getWeatherBtn">Get Weather</button>
+                <button id="getWeatherBtn" onclick="weathersearch()">Get Weather</button>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

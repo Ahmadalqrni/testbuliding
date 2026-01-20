@@ -1,0 +1,79 @@
+body {
+  background-color: #111b2c;
+  color: white;
+}
+.weatherCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+#weatherResult {
+  border-radius: 200px;
+  background-color: #1e2a44;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#weatherResult h2,
+#weatherResult h3,
+#weatherResult p {
+  color: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
+  margin-top: 65px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-top: 6px;
+}
+
+.status-message {
+  margin-top: 6px;
+  color: #d8e1ff;
+  min-height: 1.2em;
+  font-size: 0.9rem;
+}
+
+.inputSection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.inputSection input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #2f3c55;
+  background: #1a263d;
+  color: #fff;
+  outline: none;
+}
+
+.inputSection button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.inputSection button:hover {
+  background: #2563eb;
+}
+
+.inputSection button:disabled {
+  background: #5b6b88;
+  cursor: not-allowed;
+}

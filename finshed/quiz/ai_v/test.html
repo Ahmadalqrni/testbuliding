@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+
+    <style>
+        body {
+            background-color: #f6f7eb;
+            font-family: Arial, sans-serif;
+        }
+
+        .box_quiz {
+            border: 2px solid #393e41;
+            border-radius: 30px;
+            background-color: #e94f37;
+            width: 90%;
+            max-width: 720px;
+            min-height: 700px;
+            margin: 100px auto;
+            text-align: center;
+            color: white;
+        }
+
+        .question_box {
+            background-color: #393e41;
+            margin-top: 50px;
+            padding: 20px;
+            min-height: 400px;
+            position: relative;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        button.answer {
+            width: 400px;
+            max-width: 90%;
+            height: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #next {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 120px;
+            height: 50px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_quiz">
+        <h1>Quiz</h1>
+
+        <div class="question_box">
+            <p id="question"></p>
+            <p>Score: <span id="score">0</span></p>
+
+            <ul>
+                <li><button class="answer"></button></li>
+                <li><button class="answer"></button></li>
+                <li><button class="answer"></button></li>
+                <li><button class="answer"></button></li>
+                <li><button id="next">Next</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const questionEl = document.getElementById("question");
+        const scoreEl = document.getElementById("score");
+        const nextBtn = document.getElementById("next");
+        const answers = document.querySelectorAll(".answer");
+        const questionBox = document.querySelector(".question_box");
+
+        let score = 0;
+        let currentIndex = 0;
+
+        const questions = [
+            {
+                question: "What is 5 + 5?",
+                answers: ["10", "3", "11", "6"],
+                correct: 0
+            },
+            {
+                question: "What is 5 + 1?",
+                answers: ["12", "3", "1", "6"],
+                correct: 3
+            },
+            {
+                question: "What is 5 + 4?",
+                answers: ["1", "8", "9", "5"],
+                correct: 2
+            },
+            {
+                question: "What is 5 + 0?",
+                answers: ["5", "0", "10", "15"],
+                correct: 0
+            }
+        ];
+        
+        questions.sort(() => Math.random() - 0.5);
+        
+        function loadQuestion() {
+            resetButtons();
+            const q = questions[currentIndex];
+            questionEl.textContent = q.question;
+
+            answers.forEach((btn, index) => {
+                btn.textContent = q.answers[index];
+                btn.dataset.correct = index === q.correct;
+            });
+        }
+
+        function resetButtons() {
+            answers.forEach(btn => {
+                btn.disabled = false;
+                btn.style.backgroundColor = "";
+            });
+        }
+
+        function selectAnswer(button) {
+            answers.forEach(btn => btn.disabled = true);
+
+            if (button.dataset.correct === "true") {
+                button.style.backgroundColor = "green";
+                score += 5;
+                scoreEl.textContent = score;
+            } else {
+                button.style.backgroundColor = "red";
+            }
+        }
+
+        function endQuiz() {
+            questionEl.textContent = "Quiz Finished 🎉";
+            scoreEl.textContent = score;
+
+            answers.forEach(btn => btn.style.display = "none");
+            nextBtn.style.display = "none";
+
+            const gif = document.createElement("img");
+            gif.src = score >= 10 ? "gif_img/happy.gif" : "gif_img/sad.gif";
+            gif.style.width = "200px";
+            gif.style.marginTop = "10px";
+            questionBox.appendChild(gif);
+        }
+
+        answers.forEach(btn => {
+            btn.addEventListener("click", () => selectAnswer(btn));
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex++;
+            if (currentIndex < questions.length) {
+                loadQuestion();
+            } else {
+                endQuiz();
+            }
+        });
+
+        loadQuestion();
+    </script>
+</body>
+</html>
