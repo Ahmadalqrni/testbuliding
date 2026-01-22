@@ -1,7 +1,10 @@
 let dice = document.getElementById("dice");
 
+const button = document.getElementById("rollBtn");
+button.addEventListener("click", rolldice);
+
 function rolldice() {
-  listshape = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
-  let randomNumber = Math.floor(Math.random() * 6) + 1;
-  dice.textContent = listshape[randomNumber - 1];
+  const listshape = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
+  const randomNumber = Math.floor(Math.random() * 6);
+  dice.textContent = listshape[randomNumber];
 }
