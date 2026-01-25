@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Profile Page</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .profile-card {
+      width: 320px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* HEADER = BACKGROUND */
+    .profile-header {
+      position: relative;
+      height: 130px;
+      background: linear-gradient(135deg, #6366f1, #4338ca);
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      bottom: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid white;
+      background: white;
+    }
+
+    .profile-info {
+      margin-top: 65px;
+    }
+
+    .profile-info h2 {
+      margin: 10px 0 4px;
+    }
+
+    .skill {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .about-box {
+      padding: 16px;
+      font-size: 14px;
+      color: #374151;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="profile-card">
+
+    <header class="profile-header">
+      <img src="https://images.unsplash.com/photo-1501706362039-c6e80948d61c"
+           alt="Owl profile image"
+           class="profile-img">
+    </header>
+
+    <section class="profile-info">
+      <h2>Owl</h2>
+      <p class="skill">Skill: Flying</p>
+    </section>
+
+    <section class="about-box">
+      <h3>About Me</h3>
+      <p>
+        Hello! I'm Owl, a nocturnal bird known for my wisdom and keen eyesight.
+        I love flying under the moonlight and exploring the night sky.
+      </p>
+    </section>
+
+  </main>
+
+</body>
+</html>
