@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #4f3727;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+
+}
+header h1{
+    color: #F2E3C6;
+    font-size: 2.5em;
+}
+header p{
+    color: #666;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+#hero-section{
+    position: relative;
+  height: 100vh; /* full hero height */
+  background: 
+    linear-gradient(to bottom, rgba(28, 27, 24, 0.8), rgba(28, 27, 24, 0)), 
+    url("img/Coffee\ Wallpaper.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+#hero-section h2{
+    color: #F2E3C6; /* warm lamp light */
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#hero-section p{
+    font-size: 1.5em;
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #F2E3C6; /* warm lamp light */
+}
+#hero-section button{
+    background-color: #6F4E37; /* coffee brown */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+#hero-section button:hover{
+    background-color: #5A3E2B; /* darker coffee brown */
+}
+#coffees-items{
+    padding: 50px 20px;
+    background-color: #f9f5f0;
+    text-align: center;
+}
+.coffees-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* space between cards */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+#coffees-items h2{
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #4f3727;
+}
+.coffee-item{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coffee-item img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-item h3{
+    font-size: 1.5em;
+    margin: 15px 0 10px 0;
+    color: #4f3727;
+}
+.coffee-item p{
+    font-size: 1em;
+    color: #666;
+}
