@@ -7,8 +7,8 @@
 | --- | ----------------------- | ------------------------------------------------------------ |
 | 1   | Personal Profile Page   | ![Done](https://img.shields.io/badge/Done-✅-brightgreen)     |
 | 2   | Responsive Landing Page | ![Done](https://img.shields.io/badge/Done-✅-brightgreen)     |
-| 3   | Calculator              | ![Done](https://img.shields.io/badge/Done-✅-lightgrey) |
-| 4   | To-Do List              | ![Pending](https://img.shields.io/badge/Pending-⬜-brightgreen) |
+| 3   | Calculator              | ![Done](https://img.shields.io/badge/Done-✅-brightgreen) |
+| 4   | To-Do List              | ![Pending](https://img.shields.io/badge/Pending-⬜-lightgrey) |
 | 5   | Color Generator         | ![Pending](https://img.shields.io/badge/Pending-⬜-lightgrey) |
 | 6   | Simple Quiz App         | ![Pending](https://img.shields.io/badge/Pending-⬜-lightgrey) |
 | 7   | Mini Portfolio          | ![Pending](https://img.shields.io/badge/Pending-⬜-lightgrey) |
