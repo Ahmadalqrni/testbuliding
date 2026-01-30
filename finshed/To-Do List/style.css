@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1B211A;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.To-Do-List-Box{
+    max-width: 2000px;
+    margin: auto;
+    background-color: #313f22;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.To-Do-List-Box input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 60px;
+    margin-right: 10px;
+}
+.To-Do-List-Box button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 60px;
+    background-color: #395B64;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.task-list{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    background-color: #4E6C50;
+}
+.task-list li{
+    background-color: #4E6C50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userinput-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #2C3E50;
+}
+.task-display h2{
+    color: white;
+    text-align: center;     
+
+}
