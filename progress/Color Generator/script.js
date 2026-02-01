@@ -12,4 +12,4 @@ function randomcolor(){
 colorbutton.addEventListener("click", () => {
     document.body.style.backgroundColor = randomcolor();
 })
-return document.body.style.backgroundColor = randomcolor();
+
