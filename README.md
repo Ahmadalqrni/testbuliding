@@ -8,9 +8,9 @@ Each project is built from scratch and pushed to GitHub.
 ## 🔰 Level 1 — Foundations (HTML, CSS, JavaScript)
 
 - [x] Day 1 — Personal Profile Page  
-- [ ] Day 2 — Responsive Landing Page  
-- [ ] Day 3 — Calculator  
-- [ ] Day 4 — To-Do List  
+- [x] Day 2 — Responsive Landing Page  
+- [x] Day 3 — Calculator  
+- [x] Day 4 — To-Do List  
 - [ ] Day 5 — Color Generator  
 - [ ] Day 6 — Simple Quiz App  
 - [ ] Day 7 — Mini Portfolio  
