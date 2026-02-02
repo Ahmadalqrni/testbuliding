@@ -14,7 +14,7 @@
 * [ ] ❓ **Day 6** — Simple Quiz App
 * [ ] 📁 **Day 7** — Mini Portfolio
 
-🟩 Progress: **4 / 7 completed**
+🟩 Progress: **5 / 7 completed**
 
 ---
 
