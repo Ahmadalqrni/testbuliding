@@ -11,7 +11,7 @@
 * [x] 🧮 **Day 3** — Calculator App
 * [x] 📝 **Day 4** — To‑Do List
 * [x] 🎨 **Day 5** — Color Generator
-* [ ] ❓ **Day 6** — Simple Quiz App
+* [x] ❓ **Day 6** — Simple Quiz App
 * [ ] 📁 **Day 7** — Mini Portfolio
 
 🟩 Progress: **5 / 7 completed**
