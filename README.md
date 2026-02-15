@@ -13,14 +13,15 @@
 * [x] 🎨 **Day 5** — Color Generator
 * [x] ❓ **Day 6** — Simple Quiz App
 <<<<<<< HEAD
-* [ ] 📁 **Day 7** — Mini Portfolio
+* [x] 📁 **Day 7** — Mini Portfolio
 
-🟩 Progress: **6 / 7 completed**
+🟩 Progress: **7 / 7 completed**
 =======
 * [x] 📁 **Day 7** — Mini Portfolio
 
 🟩 Progress: **7 / 7 completed**
 >>>>>>> 3013deef548c1b04deb37c34e132ea32bde8ec3b
+
 
 ---
 
