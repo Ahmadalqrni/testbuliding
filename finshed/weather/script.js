@@ -34,8 +34,5 @@ weatherget.addEventListener("click", async function () {
 
   Temperature.textContent = weatherData.current_weather.temperature + "°C";
 
-  speedwind.textContent =
-    "speed wind: " + weatherData.current_weather.windspeed;
-
   cityname.textContent = geoData.results[0].name;
 });

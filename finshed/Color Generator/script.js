@@ -6,13 +6,9 @@ function randomcolor() {
   const green = Math.floor(Math.random() * 256);
   return `rgb(${red},${blue},${green})`;
 }
+const numcolor = document.getElementById("colornum");
 
 colorbutton.addEventListener("click", () => {
-<<<<<<< HEAD
   document.body.style.backgroundColor = randomcolor();
+  numcolor.textContent = document.body.style.backgroundColor;
 });
-=======
-    document.body.style.backgroundColor = randomcolor();
-})
-
->>>>>>> 3013deef548c1b04deb37c34e132ea32bde8ec3b

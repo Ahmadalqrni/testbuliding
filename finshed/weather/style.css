@@ -1,7 +1,6 @@
 body {
   background: #050f22;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -20,7 +19,7 @@ header {
   background: #1e2a44;
   padding: 20px;
   border-radius: 700px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   text-align: center;
   width: 500px;
   height: 500px;
@@ -52,6 +51,12 @@ header {
   font-size: 2rem;
   margin-top: 20px;
 }
+
+.Weather-box p {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 20px;
+}
 .Weather-box input {
   padding: 10px;
   border-radius: 8px;
@@ -64,7 +69,7 @@ header {
   padding: 10px 20px;
   border-radius: 8px;
   border: 0.5px solid white;
-  background: #2f3c55;
+  background: #347bff;
   color: #fff;
   cursor: pointer;
   margin-left: 10px;
@@ -76,7 +81,7 @@ header {
 }
 
 #weather_container {
-  margin-top: 110px;
+  margin-top: 170px;
 }
 
 @keyframes circle {
