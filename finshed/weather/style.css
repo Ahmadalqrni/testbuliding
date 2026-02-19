@@ -18,7 +18,7 @@ header {
 .Weather-box {
   background: #1e2a44;
   padding: 20px;
-  border-radius: 700px;
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   text-align: center;
   width: 500px;
@@ -31,20 +31,22 @@ header {
 .Weather-box::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
   width: 540px;
   height: 540px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 1px solid transparent;
   border-top: 5px solid white;
-  opacity: 0;
+  animation: circle 1s linear infinite; /* always spinning */
   pointer-events: none;
+  transition: border-top-color 0.4s ease;
 }
 
-.Weather-box.active::before {
-  opacity: 1; /* show animation */
-  animation: circle 1s linear infinite;
+.Weather-box.done::before {
+  opacity: 1;
+  border-top-color: #00d4ff;
 }
 
 .Weather-box p {
